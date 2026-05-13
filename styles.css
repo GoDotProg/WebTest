@@ -22,7 +22,6 @@
 
 body{
     background: var(--main-color);
-
 }
 
 header{
@@ -48,6 +47,7 @@ header{
     font-size: 1.2rem;
     color: var(--logo-color);
     font-weight: 900;
+    transition: .2s all ease-in-out;
 }
 
 .navbar a{
@@ -55,7 +55,7 @@ header{
     color: white;
     font-weight: 600;
     margin-left: 1rem;
-    transition: .2s ease-in-out;
+    transition: .2s all ease-in-out;
 }
 
 .navbar a:hover, .navbar a.active{
@@ -81,7 +81,15 @@ header{
 
 .picture{
     width: 15rem;
-    border-right: 8px solid var(--link-color);
+    border-radius: 1rem;
+    rotate: -5deg;
+    filter: blur(20px);
+    transition: .2s all ease-in-out;
+}
+
+.picture:hover{
+    rotate: 2deg;
+    filter: blur(0px);
 }
 
 .flex{
@@ -94,12 +102,8 @@ header{
 
 .text{
     font-family: 'Raleway';
-    text-align: start;
-    text-wrap: wrap;
-    padding-inline-start: 5rem;
-    background: var(--logo-color);
-    height: 100%;
+    margin-top: 1rem;
     text-align: center;
-    justify-content: center;
-    align-items: center;
+    text-wrap: wrap;
+    text-transform: uppercase;
 }

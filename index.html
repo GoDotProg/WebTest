@@ -2,52 +2,114 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Portfollio</title>
+    <title>Portfolio</title>
   </head>
   <body>
-    <!--Header-->
+
     <header class="header">
       <a class="logo" href="#">Ahmed.</a>
 
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
-        <a href="#skils">Skill</a>
-        <a href="#project">Project</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
-    <!--About-->
     <section class="About" id="about">
-        <h3>About</h3>
-        <div>
-            <img src="https://avatars.githubusercontent.com/u/223842672?v=4&size=64" alt="Profile Picture" class="picture">
+        <div class="aboutContainer">
+            <div class="aboutImageWrapper">
+                <img src="https://avatars.githubusercontent.com/u/223842672?v=4&size=64" alt="Profile Picture" class="picture">
+            </div>
             <div class="text">
-                <h3> <span style="background-image: linear-gradient(90deg, var(--main-color) 1px, var(--link-color)); -webkit-background-clip: text; background-clip: text; color: transparent;">Hey</span><span style="color: var(--link-color);"> Whats up </span><span style="background-image: linear-gradient(90deg, var(--link-color), var(--main-color)); -webkit-background-clip: text; background-clip: text; color: transparent;">?</span></h3>
+                <h3><span style="background-image: linear-gradient(90deg, var(--main-color) 1px, var(--link-color)); -webkit-background-clip: text; background-clip: text; color: transparent;">Hey</span><span style="color: var(--link-color);"> Whats up </span><span style="background-image: linear-gradient(90deg, var(--link-color), var(--main-color)); -webkit-background-clip: text; background-clip: text; color: transparent;">?</span></h3>
                 <h1>Im <span style="color:rgb(0, 108, 170);">Ahmed</span> Mohammed</h1>
                 <h4>A <span style="color:var(--link-color);">ui</span><span style="color:var(--link-color);">/ux</span> and graphic designer</h4>
-                <p></p>
+                <p>I build games, make UI layouts, and code projects from scratch.</p>
             </div>
         </div>
     </section>
 
-    <!--Skills-->
-    <section>
-
-
-
+    <section class="Skills" id="skills">
+        <h3>Skills</h3>
+        <div class="skillsContainer">
+            <div class="skillsCategory">
+                <h4>What I Use</h4>
+                <ul>
+                    <li>Figma</li>
+                    <li>Godot Engine</li>
+                    <li>Python</li>
+                    <li>C++</li>
+                </ul>
+            </div>
+        </div>
     </section>
-    <!--Projects-->
-    <section></section>
 
-    <!--Subscription-->
-    <section></section>
+    <section class="Projects" id="projects">
+        <h3>Projects</h3>
+        <div class="projectsGrid">
+            <div class="projectCard">
+                <div class="projectInfo">
+                    <h4>ZBytes Logo</h4>
+                    <p>A gold and black logo asset made for my itch.io page banner.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+            <div class="projectCard">
+                <div class="projectInfo">
+                    <h4>CRAM Language</h4>
+                    <p>A custom programming language interpreter built using Python and Rust.</p>
+                    <a href="#" class="btn">View Code</a>
+                </div>
+            </div>
+            <div class="projectCard">
+                <div class="projectInfo">
+                    <h4>Block Slayer</h4>
+                    <p>A 2D survival game prototype with waves of enemies and weapon upgrades.</p>
+                    <a href="#" class="btn">View Game</a>
+                </div>
+            </div>
+            <div class="projectCard">
+                <div class="projectInfo">
+                    <h4>Tetris Remake</h4>
+                    <p>A classic console and window game made in C++ with a unique powerup system.</p>
+                    <a href="#" class="btn">View Source</a>
+                </div>
+            </div>
+            <div class="projectCard">
+                <div class="projectInfo">
+                    <h4>ZByte Manager</h4>
+                    <p>A desktop database app with a custom dark theme made using Python Tkinter.</p>
+                    <a href="#" class="btn">View App</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!--Footer-->
-    <footer></footer>
+    <section class="Subscription" id="contact">
+        <h3>Stay Updated</h3>
+        <div class="subscribeBox">
+            <p>Drop your email to get updates on my latest code and game builds.</p>
+            <form action="#" class="subscribeForm">
+                <input type="email" placeholder="Your email" required />
+                <button type="submit" class="btnSubmit">Join</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Ahmed. All rights reserved.</p>
+        <div class="socialLinks">
+            <a href="#">Discord</a>
+            <a href="#">GitHub</a>
+            <a href="#">Itch.io</a>
+        </div>
+    </footer>
+
   </body>
 </html>
